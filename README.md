@@ -44,7 +44,8 @@ Base64 vs UTF-8 encoding:
 Base64 encoding: arbitrary sequence of bytes to ASCII text (ASCII text to be transimitted over text based medium such as HTTP. Arbitratry sequence of bytes could be a 256 bit Hash as well which is very sensitive, a slight mis-interepretation at receiver would fail the HASH signature validation. hence generally HASH sent in HTTP request header is Base64 encoded.)
 
 UTF-8 encoding: Text to sequence of bytes. (e.g. अ if this char is UTF-8 encoded then it's binary representation is "111 00000"           "10 100100"       "10 000101")
-UTF-8: Unicode is a standard which defines the code rank for all the universal characters used across all the languagues of the world, emojis etc. Unicode supports different character encoding such as UTF-8, UTF-16, ASCII. 
+UTF-8: 
+Unicode: Unicode is a standard which defines the code rank for all the universal characters used across all the languagues of the world, emojis etc. Unicode specifies code rank for character/symbol.How the character or symbol is stored in memory or represent it in an email message is defined by encoding type used for Unicode .Unicode supports different character encoding such as UTF-8, UTF-16, ASCII. 
 UTF-8 encoding can be achieved by using 1 to 4 bytes. 1st byte is reserved for 128 ASCII chars. So ASCII char has same binary representation in UTF-8 and ASCII encoding.
 i.e. for code rank 0 to 127 ASCII encoding === UTF-8 encoding
 
